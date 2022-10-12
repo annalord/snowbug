@@ -38,7 +38,7 @@ def snowman(snowman_word):
         print_guesses_remaining(wrong_letters)
 
         if len(wrong_letters) == SNOWMAN_MAX_WRONG_GUESSES:
-            print(f"Sorry, you lose! The word was {snowman}")
+            print(f"Sorry, you lose! The word was {snowman_word}")
             return
 
 
