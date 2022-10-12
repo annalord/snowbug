@@ -93,7 +93,7 @@ def is_word_guessed(word_dict):
 def build_game_board(word, word_dict):
     output_letters = []
     for elem in word:
-        if elem in word_dict:
+        if elem not in word_dict:
             output_letters += elem
         elif word_dict[elem]:
             output_letters += elem
