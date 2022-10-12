@@ -49,7 +49,7 @@ def build_snowman_graphic(num_wrong_guesses):
     """
 
     # use slicing to get the snowman lines we need
-    lines = SNOWMAN_IMAGE[:num_wrong_guesses - 1]
+    lines = SNOWMAN_IMAGE[:num_wrong_guesses]
     return "\n".join(lines)
 
 
@@ -105,6 +105,7 @@ def build_game_board(word, word_dict):
 
 def add_wrong_letter(wrong_letters, letter):
     wrong_letters.append(letter)
+    wrong_letters.sort()
 
 
 # There are no issues in this function
