@@ -122,3 +122,6 @@ def print_guesses_remaining(wrong_letters):
         return
 
     print(f"Wrong guesses left: {SNOWMAN_MAX_WRONG_GUESSES - len(wrong_letters)}")
+
+
+#adding this comment here just to test that git is connected fine
